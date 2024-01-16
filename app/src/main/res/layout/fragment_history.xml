@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    tools:context=".DrawerFragment.HistoryFragment">
+
+    <RelativeLayout
+        android:id="@+id/history_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/history_Textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="10dp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview"
+        android:layout_below="@+id/history_layout"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"/>
+
+
+
+
+</RelativeLayout>

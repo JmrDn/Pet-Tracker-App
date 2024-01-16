@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#F0810E</color>
+    <color name="secondary">#FFE1C3</color>
+    <color name="red">#FF0000</color>
+    <color name="redSecondary">#FFE2E2</color>
+    <color name="lightBlue">#ECFCFF</color>
+    <color name="average">#42FF00</color>
+    <color name="averageSecondary">#ECFFE5</color>
+    <color name="lowest">#EAEF00</color>
+    <color name="lowestSecondary">#FEFFDA</color>
+    <color name="gray">#808080</color>
+</resources>

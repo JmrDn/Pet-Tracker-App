@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/date_Textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saturday Jan 13, 2024"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        tools:ignore="HardcodedText" />
+    
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/lightblue_bg_wradius"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/primary_left_radius">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/location_icon_white"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        
+        <TextView
+            android:id="@+id/location_Textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center_vertical"
+            android:text="Philippines"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp">
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/redSecondary">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HIGHEST"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/red"
+                    android:fontFamily="@font/roboto_bold"
+                    android:padding="10dp"
+                    tools:ignore="HardcodedText" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/highestHeartRate_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="35sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BPM"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/averageSecondary">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AVERAGE"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/average"
+                    android:fontFamily="@font/roboto_bold"
+                    android:padding="10dp"
+                    tools:ignore="HardcodedText" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/averageHeartRate_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="35sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BPM"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lowestSecondary">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOWEST"
+                    android:textColor="@color/lowest"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/roboto_bold"
+                    android:padding="10dp"
+                    tools:ignore="HardcodedText" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/lowestHeartRate_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="35sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BPM"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+
+
+</LinearLayout>

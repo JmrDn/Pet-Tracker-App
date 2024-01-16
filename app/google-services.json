@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "346446571354",
+    "firebase_url": "https://pet-tracker-db-default-rtdb.firebaseio.com",
+    "project_id": "pet-tracker-db",
+    "storage_bucket": "pet-tracker-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346446571354:android:4806cff29ccf5e376c3563",
+        "android_client_info": {
+          "package_name": "com.example.pettrackerfersoncapstone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHOurrJY0Q1APvTXo3PvLLznBtxpUL7ao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
