@@ -48,7 +48,7 @@ public class HeartRateFragment extends Fragment {
     private void setUpHeartRate() {
         DatabaseReference heartRateDR = FirebaseDatabase.getInstance().getReference("heart_rate");
 
-        heartRateDR.addListenerForSingleValueEvent(new ValueEventListener() {
+        heartRateDR.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.exists()){
@@ -56,19 +56,12 @@ public class HeartRateFragment extends Fragment {
                     String currentHeartRate = snapshot.child("bpm").getValue().toString();
                     String time = DateAndTimeUtils.timeFormat(date);
 
-
+                    heartRateTV.setText(currentHeartRate);
                     timeTV.setText(time);
 
                     if (currentHeartRate != null && currentHeartRate.equals(oldHeartRate)){
                         heartRateTV.setText("0");
                     }
-                    else{
-                        heartRateTV.setText(currentHeartRate);
-
-                    }
-
-                    oldHeartRate = currentHeartRate;
-                    refresh(1500, currentHeartRate);
 
                 }
             }
